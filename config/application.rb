@@ -17,20 +17,20 @@ end
 
 module NONKETOTICHyperglycinemia
   class Application < Rails::Application
-       config.autoload_paths += %W(#{config.root}/lib/)
+    config.autoload_paths += %W(#{config.root}/lib/)
 
-        config.time_zone = 'Berlin' #change to your time zone
+    config.time_zone = 'Berlin' #change to your time zone
 
-        config.encoding = "utf-8"
-        config.filter_parameters += [:password]
-        config.active_support.escape_html_entities_in_json = true
+    config.encoding = "utf-8"
+    config.filter_parameters += [:password]
+    config.active_support.escape_html_entities_in_json = true
 
 
-        config.active_record.whitelist_attributes = false
-        config.assets.enabled = true
+    config.active_record.whitelist_attributes = false
+    config.assets.enabled = true
 
-        config.assets.version = '1.0'
+    config.assets.version = '1.0'
 
-        Time::DATE_FORMATS[:default] = "%d.%m.%Y %H:%M" # change to your date format
+    Time::DATE_FORMATS[:default] = "%d.%m.%Y %H:%M" # change to your date format
   end
 end

@@ -2,9 +2,9 @@
 <html>
 <head>
   <title></title>
-  <%= stylesheet_link_tag    "app" %>
+  <%= stylesheet_link_tag    "public" %>
   <%= javascript_include_tag "common" %>
-  <%= javascript_include_tag "app" %>
+  <%= javascript_include_tag "public" %>
 
   <%= yield(:more_head) %>
 
@@ -14,7 +14,7 @@
 <div class="navbar navbar-static-top">
   <div class="navbar-inner">
     <div class="container">
-      <%= render :partial => "app/shared/menu" %>
+      <%= render :partial => "public/shared/menu" %>
     </div>
   </div>
 </div>

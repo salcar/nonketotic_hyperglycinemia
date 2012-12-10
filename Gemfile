@@ -24,7 +24,7 @@ group :assets do
   gem 'yui-compressor'
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'libv8', '3.11.8.3'
+  gem 'libv8', '~> 3.11.8.3', :platform => :ruby
   gem "therubyracer", :require => 'v8'
 end
 
